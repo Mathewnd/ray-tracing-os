@@ -1,4 +1,5 @@
 all:
+	mkdir bin
 	nasm -f bin src/boot.asm    -o bin/boot.o
 	nasm -f bin src/boot2.asm   -o bin/boot2.bin
 	nasm -f elf32 src/entry.asm   -o bin/entry.o
